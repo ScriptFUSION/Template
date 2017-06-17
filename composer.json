@@ -1,0 +1,10 @@
+{
+  "name": "scriptfusion/template",
+  "description": "Template for creating new PHP projects.",
+  "authors": [
+    {
+      "name": "Bilge",
+      "email": "bilge@scriptfusion.com"
+    }
+  ]
+}
