@@ -21,12 +21,12 @@ matrix:
 
 cache:
   directories:
-    - .composer/cache
+    - vendor
 
 install:
   - alias composer=composer\ -n && composer selfupdate
   - composer validate
-  - composer update $DEPENDENCIES
+  - composer update --no-progress --no-suggest $DEPENDENCIES
 
 script:
   - composer test -- --coverage-clover=build/logs/clover.xml
